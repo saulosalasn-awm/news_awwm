@@ -1,0 +1,16 @@
+OBSERVATORIO FINANCIERO AWM · versión conectada
+
+PUBLICAR EN NETLIFY:
+1. Descomprime el ZIP.
+2. Sube la carpeta completa a un repositorio Git (GitHub, GitLab, etc.).
+3. En Netlify: Add new project > Import an existing project > selecciona repositorio.
+4. Build command: dejar vacío. Publish directory: . (punto). Netlify instala dependencias de package.json automáticamente.
+5. Publica y abre la URL. Las funciones en netlify/functions/news.js necesitan el despliegue de Netlify; al abrir index.html localmente NO pueden funcionar.
+
+LIMITACIONES:
+- Son titulares y metadatos RSS, NO artículos completos ni licencias de Bloomberg/Reuters.
+- Las fotografías solo se muestran cuando el feed incluye una URL de imagen y el servidor permite su presentación; algunas fuentes pueden bloquear carga externa.
+- Disponibilidad de fuentes RSS, enlaces originales y derechos de reproducción dependen de cada medio.
+- La banda de cotizaciones TradingView puede tener retrasos o bloquearse en ciertos entornos.
+- Para un portal comercial se recomienda contratar una API/licencia de medios y revisar términos de uso de cada feed.
+- Algunas noticias de Google News enlazan a Google primero; no se puede garantizar acceso directo al editor.
